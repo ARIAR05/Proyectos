@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no initial-scale=1.0, maximun-scale=1.0, minumun-scale=1.0">
+    <title>Reserva tu vuelo</title>
+    <link rel="stylesheet" href="vuelo.css">
+    <link rel="stylesheet" href="dise.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div id="inicio_primera_parte">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark ">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../homepage/homepage.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Agenda_reserva/Reserva_vuelo.html">RESERVAR UN VUELO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Destinos y promociones/imagenes/destinos_promociones.html">DESTINOS Y PROMOCIONES</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">TU RESERVA</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                <a class="dropdown-item" href="../TU RESERVA/Checkin.html">CHECK-IN</a>
+                                <a class="dropdown-item" href="../TU RESERVA/Paginas/Gestiona tu Vuelo.html">GESTIONA TU VUELO</a>
+                                <a class="dropdown-item" href="../TU RESERVA/Paginas/seguimiento.html">SIGUE UN VUELO</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">INFORMACIÓN Y AYUDA</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                <a class="dropdown-item" href="../Informacion y ayuda/informacion.html">EQUIPAJE</a>
+                                <a class="dropdown-item" href="../Informacion y ayuda/nosotros.html">NOSOTROS</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    <main>
+        <div id="counter-button" onclick="toggleCounter()">Visitas: <span id="visit-count">0</span></div>
+
+        <section class="banner">
+            <div class="banner-texto">
+                <h1> Reserva tu vuelo con Salvadorian Airlines </h1>
+                <p> ¡Explora el mundo con nosotros! </p>
+             </div>   
+
+        
+        </section>
+        <section class="booking-form">
+            <div class="container">
+                <h2>Reserva de Vuelo</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="destino">Origen:</label>
+                        <select id="origen" name="origen" required>
+                            <option value="">Seleccionar</option>
+                            <option value="El Salvador">El Salvador</option>
+                            <option value="Guatemala">Guatemala</option>
+                            <option value="Honduras">Honduras</option>
+                            <option value="Costa rica">Costa rica</option>
+                            <option value="Panama">Panama</option>
+                            <option value="Colombia">Colombia</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="destino">Destino:</label>
+                        <select id="origen" name="origen" required>
+                            <option value="">Seleccionar</option>
+                            <option value="El Salvador">El Salvador</option>
+                            <option value="Guatemala">Guatemala</option>
+                            <option value="Honduras">Honduras</option>
+                            <option value="Costa rica">Costa rica</option>
+                            <option value="Panama">Panama</option>
+                            <option value="Colombia">Colombia</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha">Fecha de salida:</label>
+                        <input type="date" id="fecha" name="fecha" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha">Fecha de regreso:</label>
+                        <input type="date" id="fecha" name="fecha" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pasajeros">Número de Pasajeros:</label>
+                        <select id="pasajeros" name="pasajeros" required>
+                            <option value="">Seleccionar</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Reservar Vuelo">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        
+
+        <div class="redes">
+            <p>Contacta con nosotros</p>
+            <a href="https://www.instagram.com/"> <img src="imagenes/Instagram_logo_2022.svg" alt="logo de Instagram"></a>
+            <a href="https://www.facebook.com/?locale=es_LA"><img src="imagenes/Facebook.png" alt="logo de Facebook"></a>
+            <a href="https://x.com/"><img src="imagenes/X_logo_2023.svg" alt="Logo de X antes Twitter"></a>
+            <a href="https://www.linkedin.com/feed/"><img src="imagenes/LinkedIn_icon.svg.png" alt="Logo de LinkedIn"></a>
+            <a id="correo_oficial" href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSGMhgGNWWgXtSDfWNNNnMZRklxGQnbGhMzcjnktFqTBHsJvbzFZRsszWBGlmPrbCHrmKDWQ">info@salvadorian.airlines</a>
+        
+        </div>
+        <div class="sucursales">
+            <div id="Sucursal_sv">
+                <p id="sedes">SEDES</p>
+
+                <p >
+                    <br>El Salvador<br><br>
+                    La Libertad<br>
+                    Zona Comercial #3, Calle Primavera y, Santa Tecla
+            </p>
+            </div>
+        <div class="Sucursal_colombia"> 
+            <p >
+                <br>Colombia<br><br>
+                Bello<br>
+                Av. 40 #Diagonal 55A #41, Hermosa Provincia, Antioquia.
+            </p>
+
+        </div>
+    </div>
+    <p id="copyright">Copyright © Salvadorian Airlines</p>
+</footer>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        if (!sessionStorage.getItem("visitIncremented")) {
+            incrementVisitCount();
+            sessionStorage.setItem("visitIncremented", "true");
+        } else {
+            updateVisitCountDisplay();
+        }
+    });
+    
+    function incrementVisitCount() {
+        let visitCount = parseInt(localStorage.getItem("visitCount")) || 0;
+        visitCount++;
+        localStorage.setItem("visitCount", visitCount);
+        updateVisitCountDisplay();
+    }
+    
+    function updateVisitCountDisplay() {
+        let visitCount = localStorage.getItem("visitCount") || 0;
+        document.getElementById("visit-count").textContent = visitCount;
+    }
+    
+    
+    
+    </script>
+</body>
+</html>
+
+

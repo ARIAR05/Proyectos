@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salvadorian Airlines-Check-in</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div id="counter-button" onclick="toggleCounter()">Visitas: <span id="visit-count">0</span></div>
+
+    <div id="inicio_primera_parte">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark ">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../homepage/homepage.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../Agenda_reserva/Reserva_vuelo.html">RESERVAR UN VUELO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Destinos y promociones/imagenes/destinos_promociones.html">DESTINOS Y PROMOCIONES</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">TU RESERVA</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                <a class="dropdown-item" href="../TU RESERVA/Checkin.html">CHECK-IN</a>
+                                <a class="dropdown-item" href="../TU RESERVA/Paginas/Gestiona tu Vuelo.html">GESTIONA TU VUELO</a>
+                                <a class="dropdown-item" href="../TU RESERVA/Paginas/seguimiento.html">SIGUE UN VUELO</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">INFORMACIÓN Y AYUDA</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                <a class="dropdown-item" href="../Informacion y ayuda/informacion.html">EQUIPAJE</a>
+                                <a class="dropdown-item" href="../Informacion y ayuda/nosotros.html">NOSOTROS</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+<div id="main">
+    <h1>Haz tu Check-In Online</h1>
+
+    <div id="Check-In">
+        <section id="Pasos">
+            <div class="paso_numero" id="paso1">
+                <p>1</p>
+            </div>
+            <div class="descripcion-paso" id="desc-1">            
+            <h2>Paso 1</h2>
+            <p>Ingresa el numero de tu reserva</p>
+            </div>
+        </section>
+        <section id="Pasos">
+            <div class="paso_numero" id="paso2">
+                <p>2</p>
+            </div>
+            <div class="descripcion-paso" id="desc-2">            
+            <h2>Paso 2</h2>
+            <p>Ingresa el tus nombres y apellidos</p>
+            </div>
+        </section>
+        <section id="Pasos">
+            <div class="paso_numero" id="paso3">
+                <p>3</p>
+            </div>
+            <div class="descripcion-paso" id="desc-3">            
+            <h2>Paso 3</h2>
+            <p>Descarga tu boleto digital</p>
+            </div>
+        </section>
+    </div>
+    <div id="Checkin-online">
+        <div class="descripcion-checkin">
+        <p>¿Faltan menos de 48 horas para tu vuelo?</p>
+            <p>Has tu Check In Online</p>
+
+            <h2>Check In Online</h2>
+            <div id="formulario">
+            <form action="post">
+            <input type="text" id="vuelo-numero" placeholder="Número de vuelo">
+            <input type="text" id="pasajero-nombre" placeholder="Nombre(s)">
+            <input type="text" id="pasajero-apellido" placeholder="Apellido(s)">
+            <a href="Paginas/Estado de Vuelo.html" id="boton1" target="_blank">Check-In</a>
+            </form>
+            </div>
+        
+        </div>
+    </div>
+
+</div>
+
+<footer>
+
+    <div class="redes">
+        <p>Contacta con nosotros</p>
+        <a href="https://www.instagram.com/"> <img src="imagenes/Instagram_logo_2022.svg" alt="logo de Instagram"></a>
+        <a href="https://www.facebook.com/?locale=es_LA"><img src="imagenes/Facebook.png" alt="logo de Facebook"></a>
+        <a href="https://x.com/"><img src="imagenes/X_logo_2023.svg" alt="Logo de X antes Twitter"></a>
+        <a href="https://www.linkedin.com/feed/"><img src="imagenes/LinkedIn_icon.svg.png" alt="Logo de LinkedIn"></a>
+        <a id="correo_oficial" href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSGMhgGNWWgXtSDfWNNNnMZRklxGQnbGhMzcjnktFqTBHsJvbzFZRsszWBGlmPrbCHrmKDWQ">info@salvadorian.airlines</a>
+        
+    </div>
+    <div class="sucursales">
+        <div id="Sucursal_sv">
+            <p id="sedes">SEDES</p>
+
+            <p >
+                <br>El Salvador<br><br>
+                La Libertad<br>
+                Zona Comercial #3, Calle Primavera y, Santa Tecla
+            </p>
+        </div>
+        <div class="Sucursal_colombia"> 
+            <p >
+                <br>Colombia<br><br>
+                Bello<br>
+                Av. 40 #Diagonal 55A #41, Hermosa Provincia, Antioquia.
+            </p>
+
+        </div>
+    </div>
+    <p id="copyright">Copyright © Salvadorian Airlines</p>
+</footer>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        if (!sessionStorage.getItem("visitIncremented")) {
+            incrementVisitCount();
+            sessionStorage.setItem("visitIncremented", "true");
+        } else {
+            updateVisitCountDisplay();
+        }
+    });
+    
+    function incrementVisitCount() {
+        let visitCount = parseInt(localStorage.getItem("visitCount")) || 0;
+        visitCount++;
+        localStorage.setItem("visitCount", visitCount);
+        updateVisitCountDisplay();
+    }
+    
+    function updateVisitCountDisplay() {
+        let visitCount = localStorage.getItem("visitCount") || 0;
+        document.getElementById("visit-count").textContent = visitCount;
+    }
+    
+    
+    
+    </script>
+</body>
+</html>
